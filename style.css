@@ -1,0 +1,84 @@
+body {
+  padding-top: 70px;
+  padding-left: 90px;
+  background-color: rgb(249, 249, 249);
+  font-family: -apple-system, system-ui,  BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, arial;
+}
+
+.body_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+  font-family: roboto, arial;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  row-gap: 10px;
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: 38px 1fr;
+  column-gap: 10px;
+}
+
+.profile_pic {
+  border-radius: 50%;
+}
+
+.title {
+  font-weight: 500;
+}
+.text {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.name {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+.name,
+.info {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(86, 82, 82);
+}
+
+.thumbnail {
+  border-radius: 10px;
+}
+
+.container {
+  position: relative;
+}
+.video_duration {
+  position: absolute;
+  color: white;
+  background-color: black;
+  border-radius: 3px;
+  font-size: 14px;
+  right: 10px;
+  bottom: 100px;
+}
+
+@media (max-width: 900px) {
+  .body_main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 610px) {
+  .body_main {
+    grid-template-columns: 1fr;
+  }
+}
